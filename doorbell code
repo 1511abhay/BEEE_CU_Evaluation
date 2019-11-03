@@ -1,0 +1,18 @@
+void setup()
+{
+  pinMode(2, INPUT);
+    pinMode(4, OUTPUT);
+
+}
+
+void loop()
+{
+  int a=digitalRead(2);
+  if(a==HIGH)
+  {
+  digitalWrite(4, HIGH);
+  delay(1000); 
+  digitalWrite(4, LOW);
+  delay(1000); 
+}
+}
